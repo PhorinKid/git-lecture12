@@ -15,10 +15,15 @@ def add_ignore():
     add_to_stage('.gitignore')
     add_all_commit_message_option("'feat: add .gitignore'")
 
+def do_stash():
+    print("git stash")
+
+def pop_stash():
+    print("git stash pop")
+
 if __name__ == '__main__':
     print('Hello Git!')
     init_git()
     add_ignore()
-
 
 
